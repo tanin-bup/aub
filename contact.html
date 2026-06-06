@@ -1,74 +1,115 @@
-<!DOCTYPE HTML>
-<html>
-	<head>		
-		<title>T A N I N</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-			<link rel="icon" href="favicon1.jpg">
-	</head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact - Internet Programming Assignment">
+    <title>Contact</title>
+    <link rel="icon" href="favicon1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-brand d-flex align-items-center">
+                <img src="aublogo.gif" alt="AUB Logo" style="height: 50px; margin-right: 10px;">
+                <span>Internet Programming - Assignment #2</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript.html">JAVA SCRIPT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="php.html">PHP</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<div id="layout">
-	
-<div id="header"> 
-		<div id="header-left">
-			<img src="aublogo.gif">  
-		</div>
-		
-		<div id="header-right">Internet Programming</br>
-			<font size="5px">Assignment # 2</font> 
-		</div>
-		<div class="clear"> </div>
-	</div>
-	
-		<div id="menu">
-			<a href="index.html">HOME</a>
-			<a href="html.html">HTML</a>
-			<a href="css.html">CSS</a>
-			<a href="javascript.html">JAVA SCRIPT</a>
-			<a href="php.html">PHP</a>
-			<a href="contact.html">CONTACT</a>
-			
-			
-		</div>
-		
-		<div id="content">
-			<div id="mainContent">			<h1>Contact</h1>
-			
+    <!-- Main Content -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>Contact Us</h1>
+                    <p class="lead">Get in touch with us for any inquiries.</p>
+                    
+                    <form class="mt-4">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="name" placeholder="Enter your full name" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email Address</label>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" placeholder="Enter your phone number">
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Subject</label>
+                            <input type="text" class="form-control" id="subject" placeholder="Enter subject" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control" id="message" rows="5" placeholder="Enter your message" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </form>
+                </div>
 
-			<p><form>			
-			
-			<fieldset>
-			
-			<legend><b>Designed be:</b></legend>
-			<b>Md. Tahsin Tanin</b><br/><font size="3">Id  # 201030673, Batch  # 35<sup>th</sup><br/>  
-			<b>Contact Address</b> : Motijheel C/A, <br/>Cell: +88019201534221
-			<br/>E-mail: <a href="mailto:bdbiman071@gmail.com">bdbiman071@gmail.com</a></font>
-			
-			</fieldset>
-			
-			</form></p>
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white">
+                            <h5 class="mb-0">Contact Information</h5>
+                        </div>
+                        <div class="card-body">
+                            <p><strong>Name:</strong> Md. Tahsin Tanin</p>
+                            <p><strong>ID:</strong> 201030673</p>
+                            <p><strong>Department:</strong> Computer Science & Engineering</p>
+                            <p><strong>University:</strong> Bangladesh University of Professional (BUP)</p>
+                            <p><strong>Campus:</strong> Motijheel Complex</p>
+                        </div>
+                    </div>
 
-</body>
-		
-		
-		</div>
-		<div id="sidebar">
-		
-			<a href="">Home</a>
-			<a href="">Home</a>
-			<a href="">Home</a>
-			
-			
-		</div>
-		<div class="clear"></div>
-		
-	</div>
-	<div id="footer">
-		Copyright © 2012,   Md. Tahsin Tanin
-	</div>
-	
-</div>
+                    <div class="card mt-3">
+                        <div class="card-header bg-dark text-white">
+                            <h5 class="mb-0">Useful Links</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><a href="https://bup.edu.bd/" target="_blank">BUP Official Site</a></li>
+                                <li><a href="http://www.w3schools.com/" target="_blank">W3Schools</a></li>
+                                <li><a href="http://www.w3.org/" target="_blank">W3C</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2012-2026 Md. Tahsin Tanin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,115 +1,127 @@
-<!DOCTYPE HTML>
-<html>
-	<head>		
-		<title>T A N I N</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-			<link rel="icon" href="favicon1.jpg">
-	</head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PHP Tutorial - Internet Programming Assignment">
+    <title>PHP Tutorial</title>
+    <link rel="icon" href="favicon1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-brand d-flex align-items-center">
+                <img src="aublogo.gif" alt="AUB Logo" style="height: 50px; margin-right: 10px;">
+                <span>Internet Programming - Assignment #2</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript.html">JAVA SCRIPT</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="php.html">PHP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<div id="layout">
-	
-<div id="header"> 
-		<div id="header-left">
-			<img src="aublogo.gif">  
-		</div>
-		
-		<div id="header-right">Internet Programming</br>
-			<font size="5px">Assignment # 2</font> 
-		</div>
-		<div class="clear"> </div>
-	</div>
-	
-		<div id="menu">
-			<a href="index.html">HOME</a>
-			<a href="html.html">HTML</a>
-			<a href="css.html">CSS</a>
-			<a href="javascript.html">JAVA SCRIPT</a>
-			<a href="php.html">PHP</a>
-			<a href="contact.html">CONTACT</a>
-			
-			
-		</div>
-		
-		<div id="content">
-			<div id="mainContent">		
-			
-			<h1>PHP</h1> 
-			
-			<p>This page is developed for practicing php... </p>
-	
+    <!-- Main Content -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>PHP Basics</h1>
+                    <p class="lead">PHP is a server-side scripting language used to create dynamic web pages.</p>
+                    
+                    <h3 class="mt-4">What is PHP?</h3>
+                    <p>PHP (Hypertext Preprocessor) is a popular open-source server-side scripting language that is especially suited for web development and can be embedded into HTML.</p>
+                    
+                    <h3 class="mt-4">Why Use PHP?</h3>
+                    <div class="alert alert-info">
+                        <ul class="mb-0">
+                            <li>Free and open-source</li>
+                            <li>Efficient and fast</li>
+                            <li>Runs on any server</li>
+                            <li>Can collect form data</li>
+                            <li>Can work with databases</li>
+                            <li>Can generate dynamic page content</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="mt-4">PHP Syntax</h3>
+                    <div class="bg-light p-3 rounded mb-3">
+                        <code>
+                            &lt;?php<br>
+                            &nbsp;&nbsp;echo "Hello, World!";<br>
+                            ?&gt;
+                        </code>
+                    </div>
+                    
+                    <h3 class="mt-4">Common PHP Functions</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Function</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>echo</code></td>
+                                    <td>Output text or variables</td>
+                                </tr>
+                                <tr>
+                                    <td><code>strlen()</code></td>
+                                    <td>Get string length</td>
+                                </tr>
+                                <tr>
+                                    <td><code>str_replace()</code></td>
+                                    <td>Replace text</td>
+                                </tr>
+                                <tr>
+                                    <td><code>strpos()</code></td>
+                                    <td>Find text position</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-		<fieldset>
-			<legend><h3>Welcome Message!</h3></legend>
-			
-			<p><strong>Welcome! Tanin!</strong></p>
-			
-			<p>Have a nice weekend as Friday!</p>
-				
-		</fieldset>
-		
-		
-		
-		<fieldset>
-						
-				<legend><h3>Calculate Area of a Rectangle:</h3></legend>
-				
-				<form action = "php.html" method = "POST">
-				
-				Width: <input type = "text" name = "width" size=10> <br/> 
-				Height: <input type = "text" name = "length" size=10> <br>
-				
-				<input type="hidden" name="calc" value ="yes"/> 
-				
-				<input type = "submit" name = "Calculate" value="Calculate"/> 
-				</form>
-				
-				<p><em>Note: This feature requires PHP to work. Use a local PHP server or upload to PHP hosting to test.</em></p>
-			
-			
-		</fieldset>
-		
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white">
+                            <h5 class="mb-0">Quick Links</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><a href="http://www.w3schools.com/" target="_blank">W3Schools PHP</a></li>
+                                <li><a href="http://www.php.net/" target="_blank">PHP.net Official</a></li>
+                                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2012-2026 Md. Tahsin Tanin. All rights reserved.</p>
+        </div>
+    </footer>
 
-
-		<fieldset>
-				<legend><h3>Your Age:</h3></legend>
-				
-				<form action="php.html" method="POST">
-				Name: <input type="text" Name="fname"/>
-				Age: <input type="text" Name="age"/>
-				
-				<input type="submit" name="submit" value="yes"/>
-				
-				</form><br/>		
-				
-				<p><em>Note: This feature requires PHP to work. Use a local PHP server or upload to PHP hosting to test.</em></p>
-
-		
-		</fieldset>
-		
-		
-		
-	</div>
-		
-
-		<div id="sidebar">
-			
-				<a href="">Home</a>
-				<a href="">Home</a>
-				<a href="">Home</a>
-				
-				
-			</div>
-			<div class="clear"></div>
-			
-		</div>
-		<div id="footer">
-			Copyright © 2012,   Md. Tahsin Tanin
-		</div>
-		
-	</div>
-	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

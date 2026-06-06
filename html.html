@@ -1,95 +1,116 @@
-<!DOCTYPE HTML>
-<html>
-	<head>		
-		<title>T A N I N</title>
-		<link rel="stylesheet" type="text/css" href="style.css">
-			<link rel="icon" href="favicon1.jpg">
-	</head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML Tutorial - Internet Programming Assignment">
+    <title>HTML Tutorial</title>
+    <link rel="icon" href="favicon1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-brand d-flex align-items-center">
+                <img src="aublogo.gif" alt="AUB Logo" style="height: 50px; margin-right: 10px;">
+                <span>Internet Programming - Assignment #2</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="html.html">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript.html">JAVA SCRIPT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="php.html">PHP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<div id="layout">
-	
-<div id="header"> 
-		<div id="header-left">
-			<img src="aublogo.gif">  
-		</div>
-		
-		<div id="header-right">Internet Programming</br>
-			<font size="5px">Assignment # 2</font> 
-		</div>
-		<div class="clear"> </div>
-	</div>
-	
-		<div id="menu">
-			<a href="index.html">HOME</a>
-			<a href="html.html">HTML</a>
-			<a href="css.html">CSS</a>
-			<a href="javascript.html">JAVA SCRIPT</a>
-			<a href="php.html">PHP</a>
-			<a href="contact.html">CONTACT</a>
-			
-			
-		</div>
-		
-		<div id="content">
-			<div id="mainContent">	<h1>HTML</h1>
-			
+    <!-- Main Content -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>HTML Basics</h1>
+                    <p class="lead">HTML (HyperText Markup Language) is the standard markup language for creating web pages.</p>
+                    
+                    <h3 class="mt-4">What is HTML?</h3>
+                    <p>HTML is used to describe the structure and content of a webpage. It uses a set of tags to tell web browsers how to display text and media.</p>
+                    
+                    <h3 class="mt-4">HTML Elements</h3>
+                    <p>An HTML element is everything from the start tag to the end tag:</p>
+                    <div class="bg-light p-3 rounded">
+                        <code>&lt;tagname&gt;Content goes here...&lt;/tagname&gt;</code>
+                    </div>
+                    
+                    <h3 class="mt-4">Common HTML Tags</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Tag</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><code>&lt;h1&gt; to &lt;h6&gt;</code></td>
+                                    <td>Headings</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;p&gt;</code></td>
+                                    <td>Paragraph</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;a&gt;</code></td>
+                                    <td>Hyperlink</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;img&gt;</code></td>
+                                    <td>Image</td>
+                                </tr>
+                                <tr>
+                                    <td><code>&lt;div&gt;</code></td>
+                                    <td>Division/Container</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-				<body bgcolor="lightyellow">
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white">
+                            <h5 class="mb-0">Quick Links</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><a href="http://www.w3schools.com/" target="_blank">W3Schools HTML</a></li>
+                                <li><a href="http://www.w3.org/" target="_blank">W3C Official</a></li>
+                                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-<p align="center"><font size="6"><b>Bangladesh University of Professionals (BUP)</b></font><br/>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2012-2026 Md. Tahsin Tanin. All rights reserved.</p>
+        </div>
+    </footer>
 
-<font size="4">Department of Computer Science & Engineering</font>
-<br/><br/>
-<a href="https://bup.edu.bd/" target="_blank"><img border="1" src="https://fbcdn-photos-a.akamaized.net/hphotos-ak-ash4/1360_445304110577_445303710577_16156685_6604_a.jpg"/> </a></p>
-
-<table width="100%" height="000px" border="00"> 
-<th bgcolor="green"><font color="white">Programs</font></th>
-<th bgcolor="green"><font color="white">Campus</font></th>
-
-<tr bgcolor="lightgreen"> 
-<td width="350">
-<ol type="I">
-<li>Computer Science and Engineering (CSE)</li>
-<li>Government Politics (GP)</li>
-<li>English Literature (EL)</li>
-<li>Bachelor of Business Administration (BBA)</li>
-<li>Masters of Business Administration (MBA)</li>
-<ol>
-</td>
- 
-<td>
-<ul type="circle">
-<li>Motijheel</li>
-<li>Uttara</li>
-<li>Dhanmondi</li>
-<li>Chittagong</li>
-<li>Sylhet</li>
-<ul>
-</td>
- 
-</table>
-<br/>
-			
-			</div>
-			
-			<div id="sidebar">
-			
-				<a href="">Home</a>
-				<a href="">Home</a>
-				<a href="">Home</a>
-				
-				
-			</div>
-			<div class="clear"></div>
-			
-		</div>
-		<div id="footer">
-			Copyright © 2012,   Md. Tahsin Tanin
-		</div>
-		
-	</div>
-	
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

@@ -1,108 +1,121 @@
-<!DOCTYPE HTML>
-<html>
-	<head>		
-		<title>T A N I N</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-			<link rel="icon" href="favicon1.jpg">
-	<style type="text/css">
-	
-	p:first-letter
-	{
-	color:olive;
-	font-size:30px;
-	}
-	
-	a:first-line 
-	{
-	color:grey;
-	font-variant:small-caps;
-	}
-	
-	p>i:first-child
-	{
-	color:yellow;
-	}
-	
-	a:link {color:olive;}
-	a:visited {color:pink;}
-	a:hover {color:magenta;}
-	a:active {color:ash;}
-
-[style]
-{
-color:olive;
-}
-
-</style>
-	</head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="CSS Tutorial - Internet Programming Assignment">
+    <title>CSS Tutorial</title>
+    <link rel="icon" href="favicon1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-brand d-flex align-items-center">
+                <img src="aublogo.gif" alt="AUB Logo" style="height: 50px; margin-right: 10px;">
+                <span>Internet Programming - Assignment #2</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="css.html">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="javascript.html">JAVA SCRIPT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="php.html">PHP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<div id="layout">
-	
-<div id="header"> 
-		<div id="header-left">
-			<img src="aublogo.gif">  
-		</div>
-		
-		<div id="header-right">Internet Programming</br>
-			<font size="5px">Assignment # 2</font> 
-		</div>
-		<div class="clear"> </div>
-	</div>
-	
-		<div id="menu">
-			<a href="index.html">HOME</a>
-			<a href="html.html">HTML</a>
-			<a href="css.html">CSS</a>
-			<a href="javascript.html">JAVA SCRIPT</a>
-			<a href="php.html">PHP</a>
-			<a href="contact.html">CONTACT</a>
-			
-			
-		</div>
-		
-		<div id="content">
-			<div id="mainContent"><h1>CSS</h1>
-			
+    <!-- Main Content -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>CSS Basics</h1>
+                    <p class="lead">CSS (Cascading Style Sheets) is used to style and layout web pages.</p>
+                    
+                    <h3 class="mt-4">What is CSS?</h3>
+                    <p>CSS is used to style HTML elements and control the presentation of a webpage, including colors, fonts, spacing, and layout.</p>
+                    
+                    <h3 class="mt-4">Ways to Add CSS</h3>
+                    <div class="alert alert-info">
+                        <strong>CSS can be added in three ways:</strong>
+                        <ul class="mb-0 mt-2">
+                            <li>Inline - using the style attribute</li>
+                            <li>Internal - using the &lt;style&gt; tag</li>
+                            <li>External - using a separate CSS file</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="mt-4">CSS Selectors</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Selector</th>
+                                    <th>Example</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>Element</td>
+                                    <td><code>p</code></td>
+                                    <td>Selects all &lt;p&gt; elements</td>
+                                </tr>
+                                <tr>
+                                    <td>ID</td>
+                                    <td><code>#header</code></td>
+                                    <td>Selects element with id="header"</td>
+                                </tr>
+                                <tr>
+                                    <td>Class</td>
+                                    <td><code>.container</code></td>
+                                    <td>Selects all elements with class="container"</td>
+                                </tr>
+                                <tr>
+                                    <td>Universal</td>
+                                    <td><code>*</code></td>
+                                    <td>Selects all elements</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-				<p>I have used CSS codes for this websites, to see the style.css please <i><a href="style.css">CLICK HERE</a></i></p>
-			
-			</div>
-			
-			<div id="sidebar">
-			
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white">
+                            <h5 class="mb-0">Quick Links</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><a href="http://www.w3schools.com/" target="_blank">W3Schools CSS</a></li>
+                                <li><a href="http://www.w3.org/" target="_blank">W3C Official</a></li>
+                                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
-			Mouse-cursor:<br/>
-			
-				<span style="cursor:auto">1.	auto</span><br />
-				<span style="cursor:crosshair">2.	crosshair</span><br />
-				<span style="cursor:default">3.	default</span><br />
-				<span style="cursor:e-resize">4.	e-resize</span><br />
-				<span style="cursor:help">5.	help</span><br />
-				<span style="cursor:move">6.	move</span><br />
-				<span style="cursor:n-resize">7.	n-resize</span><br />
-				<span style="cursor:ne-resize">8.	ne-resize</span><br />
-				<span style="cursor:nw-resize">9.	nw-resize</span><br />
-				<span style="cursor:pointer">10.	pointer</span><br />
-				<span style="cursor:progress">11.	progress</span><br />
-				<span style="cursor:s-resize">12.	s-resize</span><br />
-				<span style="cursor:se-resize">13.	se-resize</span><br />
-				<span style="cursor:sw-resize">14.	sw-resize</span><br />
-				<span style="cursor:text">15.	text</span><br />
-				<span style="cursor:w-resize">16.	w-resize</span><br />
-				<span style="cursor:wait">17.	wait</span><br />
-			
-			</div>
-			
-			<div class="clear"></div>
-			
-		</div>
-		<div id="footer">
-			Copyright © 2012,   Md. Tahsin Tanin
-		</div>
-		
-	</div>
-	
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2012-2026 Md. Tahsin Tanin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

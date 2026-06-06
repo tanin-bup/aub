@@ -1,152 +1,125 @@
-<!DOCTYPE HTML>
-<html>
-	<head>		
-		<title>T A N I N</title>
-		
-<link rel="stylesheet" type="text/css" href="style.css">
-			<link rel="icon" href="favicon1.jpg">
-<script type="text/javascript">
-
-
-function displayDate()
-{
-document.getElementById("date").innerHTML=Date();
-}
-
-
-function changecolor()
-{
-	document.getElementById("content").style.backgroundColor='moccasin';
-	document.getElementById("demo").innerHTML=  "<b> Body color changed !</b>";
-}
-
-
-function show_alert()
-{
-alert("This website is for my Second assignment");
-}
-
-function show_confirm()
-
-{
-var r=confirm("Is this assignment is good?");
-if (r==true)
-{
-alert("Thank you for 'OK'");
-}
-else
-{
-alert("You pressed 'Cancel'");
-}
-}
-
-
-function show_prompt()
-{
-var name=prompt("Please enter your name","Tanin");
-if (name!=null && name!="")
-  {
-  document.write("<p>Hello " + name + "! How are you today?</p>");
-  }
-}
-
-
-
-
-</Script>
-
-
-	</head>
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="JavaScript Tutorial - Internet Programming Assignment">
+    <title>JavaScript Tutorial</title>
+    <link rel="icon" href="favicon1.jpg">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
 <body>
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <div class="navbar-brand d-flex align-items-center">
+                <img src="aublogo.gif" alt="AUB Logo" style="height: 50px; margin-right: 10px;">
+                <span>Internet Programming - Assignment #2</span>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">HOME</a></li>
+                    <li class="nav-item"><a class="nav-link" href="html.html">HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="css.html">CSS</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="javascript.html">JAVA SCRIPT</a></li>
+                    <li class="nav-item"><a class="nav-link" href="php.html">PHP</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-	<div id="layout">
-	
-<div id="header"> 
-		<div id="header-left">
-			<img src="aublogo.gif">  
-		</div>
-		
-		<div id="header-right">Internet Programming</br>
-			<font size="5px">Assignment # 2</font> 
-		</div>
-		<div class="clear"> </div>
-	</div>
-	
-		<div id="menu">
-			<a href="index.html">HOME</a>
-			<a href="html.html">HTML</a>
-			<a href="css.html">CSS</a>
-			<a href="javascript.html">JAVA SCRIPT</a>
-			<a href="php.html">PHP</a>
-			<a href="contact.html">CONTACT</a>
-			
-			
-		</div>
-		<div id="content">
-			<div id="mainContent"><h1>JAVA SCRIPT</h1>
-				
-				Here i've tried to making some popup box... 
-				
-				<br/><br/>
-				
-				<p><font color="olive" id="date">Show:</font></p>
-				<button type="button" onclick="displayDate()">Date and Time</button>
-				
-				
-				<button  onclick="changecolor()" id="demo" >Change my body color</button>
-				
-						
-				<button type="button" onclick="show_alert()">Take an alert</button>
-				
-					
-				<button type="button" onclick="show_confirm()">Confirmation</button> 
-				
-				
-				<input type="button" onclick="show_prompt()" value="Prompt Box" />
-			
-			</br></br>
-			
-			
-			
-			<font size="4"><b>Your Browser Information</b></font> 
-			
-			</br>
-			
-				
-			<div id="example"></div>
-			
-				<script type="text/javascript">
-				txt = "Browser CodeName			: " + navigator.appCodeName + "</br>";
-				txt+= "Browser Version 			: " + navigator.appVersion + "</br>";
-				txt+= "Cookies Enabled 			: " + navigator.cookieEnabled + "</br>";
-				txt+= "Platform 				: " + navigator.platform + "</br>";
-				txt+= "User-agent header		: " + navigator.userAgent + "</br>";
+    <!-- Main Content -->
+    <div class="container-fluid py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h1>JavaScript Basics</h1>
+                    <p class="lead">JavaScript is a programming language that adds interactivity to web pages.</p>
+                    
+                    <h3 class="mt-4">What is JavaScript?</h3>
+                    <p>JavaScript is a client-side programming language that runs in web browsers to make websites interactive and dynamic.</p>
+                    
+                    <h3 class="mt-4">Why Use JavaScript?</h3>
+                    <div class="alert alert-success">
+                        <ul class="mb-0">
+                            <li>Validates form data</li>
+                            <li>Responds to user actions</li>
+                            <li>Manipulates HTML content</li>
+                            <li>Performs calculations</li>
+                            <li>Controls multimedia elements</li>
+                        </ul>
+                    </div>
+                    
+                    <h3 class="mt-4">JavaScript Syntax</h3>
+                    <div class="bg-light p-3 rounded mb-3">
+                        <code>
+                            var message = "Hello, World!";<br>
+                            document.write(message);
+                        </code>
+                    </div>
+                    
+                    <h3 class="mt-4">Data Types</h3>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead class="table-dark">
+                                <tr>
+                                    <th>Data Type</th>
+                                    <th>Example</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>String</td>
+                                    <td><code>"Hello"</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Number</td>
+                                    <td><code>42</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Boolean</td>
+                                    <td><code>true</code> or <code>false</code></td>
+                                </tr>
+                                <tr>
+                                    <td>Array</td>
+                                    <td><code>[1, 2, 3]</code></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
 
-				document.getElementById("example").innerHTML=txt;
-			
-			</script> 
-			
-			
-			</br>
-				
-				</div>
-			<div id="sidebar">
-			
-				<a href="">Home</a>
-				<a href="">Home</a>
-				<a href="">Home</a>
-				
-				
-			</div>
-			<div class="clear"></div>
-			
-		</div>
-		<div id="footer">
-			Copyright © 2012,   Md. Tahsin Tanin 
-		</div>
-		
-	</div>
-	
+                <!-- Sidebar -->
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div class="card-header bg-dark text-white">
+                            <h5 class="mb-0">Quick Links</h5>
+                        </div>
+                        <div class="card-body">
+                            <ul class="list-unstyled">
+                                <li><a href="http://www.w3schools.com/" target="_blank">W3Schools JavaScript</a></li>
+                                <li><a href="http://www.w3.org/" target="_blank">W3C Official</a></li>
+                                <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-4 mt-5">
+        <div class="container">
+            <p class="mb-0">&copy; 2012-2026 Md. Tahsin Tanin. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
